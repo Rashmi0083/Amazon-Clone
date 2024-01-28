@@ -1,0 +1,471 @@
+*
+{
+    box-sizing: border-box;
+   
+}
+
+body
+{
+    margin: 0;
+    background-color: #7c7c7c;
+}
+
+/*******     header *******/
+.header
+{
+    background-color: rgb(19,25,33);
+    height: 68px;
+    color: white;
+}
+
+.container
+{
+    width: 99%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(19,25,33);
+    display: flex;
+}
+
+/*
+https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB600086755_.png
+*/
+
+.logo-container
+{
+    height: 50px;
+    align-items: center;
+    display: flex ;
+    font: 1.5rem;
+    width: 134px;
+}    
+
+.logo
+{
+    height: 50px;
+    width: 120px;
+    background : url('https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB600086755_.png');
+    background-repeat: no-repeat ;
+    background-position-y: -38px ;
+    margin-top: 5px;
+
+}
+
+.dotin
+{
+    position: relative;
+    margin-top: 3px;
+    margin-left: -13px;
+    font-size: 15px;
+    
+}
+
+.border-white
+{
+    border: 1px solid transparent;
+    margin: 5px 5px;
+    padding: 5px;
+}
+
+.border-white:hover
+{
+    border: 1px solid white;
+}
+
+
+.address-container
+{
+    margin-left: 10px;
+}
+.greet
+{
+    position: relative;
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+.icon-address
+{
+    display: flex;
+    align-items: center;
+    margin-top: -33px;
+}
+
+
+.search-container{
+    background-color: red;
+    margin-left: 15px;
+    width: 640px;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 10px;
+
+}
+
+.search-container:hover
+{
+    outline: 3px solid orange;
+}
+.search-select
+{
+    width: 60px;
+    border: none;
+    background-color: #ccc;
+}
+
+.search-input
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 1.3rem;
+}
+
+.search-icon
+{
+    width: 50px ;
+    background-color:rgb(253,172,101) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.language-container
+{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.language-container p
+{
+    font-size: 0.8rem;
+    margin: 0px;
+    
+}
+.language-img
+{
+    width: 20px;
+    margin: 0px;
+}
+
+.language-img img
+{
+    width: 100%;
+    margin: 0px;
+}
+
+.login-container
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.first
+{
+    font-size: 0.8rem;
+    margin: 10px 0px 0px 0px;
+}
+
+.second
+{
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 0px
+}
+
+.cart-container
+{
+    margin-top: 20px;
+}
+
+/*****nav-container****/
+
+.nav-container
+{
+    display: flex;
+    height: 40px;
+    background-color: rgb(28, 41, 58);
+    color: white;
+}
+
+.nav-box
+{
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-box p
+{
+    margin: 0px 0;
+}
+
+.amazon-prime img
+{
+    width: 350px;
+    
+    height: 37px;
+}
+
+.amazon-prime
+{
+    margin-left: 39px ;
+}
+.amazon-prime:hover
+{
+    border: 2px solid white;
+}
+/******image-slider*******/
+
+.image-container
+{
+    position: relative;
+}
+
+.image-list
+{
+    display: flex;
+    overflow: hidden;
+}
+
+.image-item
+{
+    margin-top: 0px;
+    min-width: 100%;
+    transition: transform(0.3s);
+    height: 500px;
+    
+    
+}
+
+.image-item img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-button
+{
+    margin-top: -50vh;
+}
+
+.image-btn-container
+{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: WHITE;
+}
+
+
+.slider-btn
+{
+    padding: 100px 20px;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: white;
+    border: 1px solid transparent;
+}    
+
+.slider-btn:focus
+{
+    border-color: seagreen;
+    box-shadow: -2px -2px 2px rgb(255, 255, 255),
+    2px 2px 2px rgb(255, 255, 255)
+}
+
+.heading
+{
+    background-color: rgb(19,25,33);
+    width: 200px;
+    height: 50px;
+}
+
+.product-heading
+{
+    align-items: center;
+}
+.card-nested
+{
+    width: 130px;
+}
+
+.card-nested img
+{
+    width: 100%;
+}
+
+.card-nested p
+{
+    margin-top: 0px;
+}
+
+.card-product-nested-card
+{
+    width: 200px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+/*.card-product-container */
+
+.main
+{
+    position: relative;
+    top: -300px;
+}
+/*
+.card-product-container
+{
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+*/
+
+.card-product-container
+{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+.card-product
+{
+    margin: 10px;
+    width: 300px;
+    height: 430px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    box-shadow: -50px -50px 40px rgba(255,255,255,0.5),
+    50px 50px 40px rgba(255,255,255,0.5);
+}
+
+.card-product h2
+{
+    margin-top: 10px;
+    padding: 3px;
+}
+
+.card-product-nested-card
+{
+    width: 280px;
+    height: 303px;
+    background-color: white;
+    margin: auto;
+}
+
+.card-product-btn
+{
+    font-size: 14px;
+    padding: 3px;
+    color: rgb(65, 24, 248);
+    margin: 3px;
+    background-color: transparent;
+    border: none;
+}
+
+.single-product
+{
+    margin: 5px 20px;
+}
+
+.single-product img
+{
+    width: 240px;
+    height: 250px;
+    margin-left: 5px ;
+}
+
+/*****Today's deals*****/
+
+.today_deals_container
+{
+    background-color: white;
+    margin: 20px;
+    /*width: 100%;*/
+    height: 350px;
+
+}
+.today_deals_heading h2,p{
+    display: inline;
+    margin: 5px;
+}
+
+.today_deals_product_container
+{
+    display: flex;
+    
+    position: relative;
+}
+
+.today_deals_slider_btn
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    position: absolute;
+}
+
+.products
+{
+    margin: 5px;
+    border: 1px solid black;
+    height: 300px;
+    padding: 10px;
+}
+
+.today_deals_product_list
+{
+    
+    background-color: white;
+    display: flex;
+    margin: 10px;
+    
+}
+
+.today_deals_product_list_img
+{
+    border: 1px solid black;
+    margin: 10px;
+    
+}
+
+.today_deals_product_list img
+{
+    margin: 20px 30px;
+    width: 150px;
+    height: 170px;
+}
+
+.todays_deals_btn
+{
+    background-color: rgb(160, 17, 17);
+    color: white;
+}
+
+
+
+
